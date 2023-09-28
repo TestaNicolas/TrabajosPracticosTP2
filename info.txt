@@ -1,0 +1,6 @@
+ContenidoStr {
+  "dependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
+ - ContenidoObj [object Object] - TamañoBytes 52
