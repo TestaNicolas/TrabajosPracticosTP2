@@ -1,0 +1,11 @@
+{
+  "contenidoStr": {
+    "contenidoStr": "{\n  \"dependencies\": {\n    \"nodemon\": \"^3.0.1\"\n  }\n}\n",
+    "contenidoObj": {
+      "dependencies": {
+        "nodemon": "^3.0.1"
+      }
+    },
+    "size": 52
+  }
+}

@@ -1,8 +1,6 @@
 const fs = require('fs/promises');
 const {Info} = require('./Info')
 
-console.log('-----------------------------------------------------------------------')
-
 const archivo = './../package.json'
 
 async function ejecutar() {
@@ -17,20 +15,22 @@ async function ejecutar() {
 
         // 2) Muestre por consola el objeto info luego de leer el archivo.
         const string = info.getInfo()
-        console.log(`Contenido Info: ${string}`)
+        console.log(`Recopilacion de datos OK ${string}`)
 
         // 3) Guarde el objeto info en un archivo llamado info.txt dentro de la misma carpeta de package.json.
-        fs.writeFile('./../info.txt', info.getInfo())
+        fs.writeFile('./../info.txt', JSON.stringify(info, null, 2), 'utf8');
 
-        return info 
+        console.log('El archivo info(mapaa.js).txt se creo correctamente');
+
     } catch (error) {
-        console.error('ERROR', error)
-        return
+        console.error('Ocurrio un Error', error)
     }
    
 }
 
 ejecutar()
 
-
+            // console.log(`Recopilacion de datos OK ${info.getInfo()}`)
+        
+        // fs.writeFile('./../info(maptc).txt', JSON.stringify(info, null, 2), 'utf-8')
 
